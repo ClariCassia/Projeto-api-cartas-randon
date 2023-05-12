@@ -51,4 +51,4 @@ Com a ajuda do método fetch(), criei uma função que faz solicitações à API
 Este projeto me mostrou como as APIs são importantes para obter informações de fontes externas e como o método fetch() é útil para fazer solicitações assíncronas em JavaScript. Embora o foco principal do projeto tenha sido o consumo da api, também coloquei em prática os conhecimentos no uso html semâmtico e flebox.
 ## Acesso a página
 
-Para ver o projeto pronto [clique aqui ](https://claricassia.github.io/Formulario-com-validacao-JS/)
+Para ver o projeto pronto [clique aqui ](https://claricassia.github.io/projeto-api-cartas/)
