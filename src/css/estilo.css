@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background: url(../imagens/fundo-abstrato-moderno-com-cartas.jpg);
+    background: url(../imagens/fundo-abstrato-moderno-com-cartas.jpg) center no-repeat;
+   background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
