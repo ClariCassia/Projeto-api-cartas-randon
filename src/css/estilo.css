@@ -1,0 +1,55 @@
+html {
+    font-size: 62, 5%;
+}
+
+body {
+    background: url(../imagens/fundo-abstrato-moderno-com-cartas.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Insanibc';
+    color: #ffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    font-size: 3.5rem;
+}
+
+.titulo {
+    padding: 2rem 0 0 0;
+    font-size: 5.5rem;
+}
+
+.sub-titulo {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.btn-nova-carta {
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: #ffff;
+    background-color: black;
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+    transition: 0.3s ease;
+}
+
+.btn-nova-carta:hover {
+    background-color: #D40000;
+    font-weight: 700;
+    cursor: pointer;
+}
