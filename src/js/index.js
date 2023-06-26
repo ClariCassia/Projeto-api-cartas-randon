@@ -1,3 +1,7 @@
+document.querySelector(".btn-nova-carta").addEventListener("click", () => {
+  tirarUmaCartadobaralho();
+});
+
 async function criarBaralho() {
   const url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
   const resposta = await fetch(url);
@@ -12,11 +16,7 @@ async function tirarUmaCartaAleatoria(deck_id) {
 
 async function tirarUmaCartadobaralho() {
   const baralho = await criarBaralho();
-  const carta = await tirarUmaCartaAleatoria(baralho.deck_id);
-  console.log(
-    "🚀 ~ file: index.js:16 ~ tirarUmaCartadobaralho ~ carta:",
-    carta
-  );
+  const carta = await tirarUmaCartaAleatoria(baralho.deck_id);  
 
   const imagemCarta = carta.cards[0].image;
   let descricao = null;
@@ -58,10 +58,6 @@ async function tirarUmaCartadobaralho() {
   ).innerHTML = `${valorCarta} de ${descricao}`;
 }
 
-const btnNovaCarta = document.querySelector(".btn-nova-carta");
 
-btnNovaCarta.addEventListener("click", () => {
-  tirarUmaCartadobaralho();
-});
 
-tirarUmaCartadobaralho();
+

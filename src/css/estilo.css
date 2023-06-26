@@ -4,8 +4,9 @@ html {
 
 body {
     background: url(../imagens/fundo-abstrato-moderno-com-cartas.jpg) center no-repeat;
-   background-size: cover;
+    background-size: cover;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     font-family: 'Insanibc';
@@ -13,6 +14,7 @@ body {
 }
 
 main {
+    display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
