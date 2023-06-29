@@ -48,7 +48,7 @@ Com a ajuda do método fetch(), criei uma função que faz solicitações à API
 - JS
 
 ## O que eu aprendi
-Este projeto me mostrou como as APIs são importantes para obter informações de fontes externas e como o método fetch() é útil para fazer solicitações assíncronas em JavaScript. Como a api tinha um retorno em inglês utilizei um switch/case para traduzir a descrição a baixo da carta. Embora o foco principal do projeto tenha sido o consumo da api, também coloquei em prática os conhecimentos no uso html semâmtico e flebox.
+Este projeto me mostrou como as APIs são importantes para obter informações de fontes externas e como o método fetch() é útil para fazer solicitações assíncronas em JavaScript. Como a api tinha um retorno em inglês utilizei objetos para tratar e traduzir a descrição a baixo da carta. Embora o foco principal do projeto tenha sido o consumo da api, também coloquei em prática os conhecimentos no uso html semâmtico e flebox.
 ## Acesso a página
 
 Para ver o projeto pronto [clique aqui ](https://claricassia.github.io/Projeto-api-cartas-randon/)
