@@ -16,48 +16,43 @@ async function tirarUmaCartaAleatoria(deck_id) {
 
 async function tirarUmaCartadobaralho() {
   const baralho = await criarBaralho();
-  const carta = await tirarUmaCartaAleatoria(baralho.deck_id);  
+  const carta = await tirarUmaCartaAleatoria(baralho.deck_id);
 
-  const imagemCarta = carta.cards[0].image;
-  let descricao = null;
-  let valorCarta = carta.cards[0].value;  
+  const imagemCarta = carta.cards[0].image; 
+  let valueCarta = carta.cards[0].value; 
+  console.log("tirarUmaCartadobaralho : valueCarta:", valueCarta)
+  let nipe = carta.cards[0].suit
 
-  switch (carta.cards[0].value) {
-    case "JACK":
-      valorCarta = "Valete";
-      break;
-    case "QUEEN":
-      valorCarta = "Dama";
-      break;
-    case "KING":
-      valorCarta = "Rei";
-      break;    
-    case "ACE":
-      valorCarta = "Ás";
-      break;
-  }
+  const nipeDaCarta = {
+    "HEARTS": "Copas",
+    "DIAMONDS": "Ouros",
+    "SPADES": "Espada",
+    "CLUBS": "Paus",
+  }  
 
-  switch (carta.cards[0].suit) {
-    case "HEARTS":
-      descricao = "Copas";
-      break;
-    case "DIAMONDS":
-      descricao = "Ouros";
-      break;
-    case "SPADES":
-      descricao = "Espada";
-      break;
-    case "CLUBS":
-      descricao = "Paus";
-      break;
-  }
-
+  const valorDaCarta = {
+    "JACK":"Valete",
+    "QUEEN": "Dama",
+    "KING":  "Rei",
+    "CLUBS": "Paus",
+    "ACE": "Ás",
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5,
+    '6': 6,
+    '7': 7,
+    '8': 8,
+    '9': 9,
+    '10': 10,
+  }   
+  
   document.getElementById("carta").src = imagemCarta;
   document.querySelector(
     ".descricao"
-  ).innerHTML = `${valorCarta} de ${descricao}`;
+  ).innerHTML = `${valorDaCarta[valueCarta]} de ${nipeDaCarta[nipe]} `;
+
 }
 
-
-
+tirarUmaCartadobaralho();
 
